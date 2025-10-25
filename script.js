@@ -1,36 +1,47 @@
 // ax²+bx+c=0
 // z=b²-4ac
 
+let a=4;
+let b=35;
+let c=20;
 
+let value=[a,b,c];
 
-// var a =0;
-// var b =0;
-// var c =0;
-// var z=(b*1/2)-(4*a*c);
-// //the equation accept 1 results
-
-// var z=(-b/2*a);
-
-// //the equation accept 2 results
-// var z1=(-b+(z*1/2))/(2*a);
-// var z2=(-b-(z*1/2))/(2*a);
-
-// if(z=0){ 
-//     alert(z3);
-//     }
-// else if(z>0){
-//     alert(z2);
-// }
-// else{
-//     alert("No result");
-// }
-function calculatez(a,b,c){
-  return (b*1/2)-(4*a*c)
+function calculateZ (){
+  return Math.pow(b,2)-(4*a*c)
 }
-const z=calculatez (3,7,9);
+let z=calculateZ(value);
 console.log(z);
 
-function calculatez
+
+
+
+function calculateY (){
+  return (-b/(2*a))
+};
+const y=calculateY (value);
+console.log(y);
+
+function calculateX1 (){
+return(-b+Math.sqrt(z))/(2*a)
+}
+const x1=calculateX1(value);
+console.log(x1);
+
+function calculateX2 (){
+return (-b-Math.sqrt(z))/(2*a)
+}
+const x2=calculateX2(value);
+console.log(x1);
+
+
+
+if(z>0){
+  alert("This equation has two results "+x1+" and "+x2);
+}else if(z=0){
+    alert("This equation has one results"+x1+"and"+x2);
+}
+else alert("This equation doesn't have results");
 
 
 
