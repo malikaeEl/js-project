@@ -1,9 +1,9 @@
 // ax²+bx+c=0
 // z=b²-4ac
 
-let a=0;
-let b=0;
-let c=0;
+let a=1;
+let b=2;
+let c=1;
 
 let value=[a,b,c];
 
@@ -34,11 +34,12 @@ console.log(x1);
 
 
 if(z>0){
-  alert("This equation has two results "+x1+" and "+x2);
-}else if(z=0){
-    alert("This equation has one results"+y);
+  alert("This equation has two results "+x1+" and "+x2)
 }
-else alert("This equation doesn't have results");
+else if(z==0){
+    alert("This equation has one results"+y)
+}
+else alert("This equation doesn't have results")
 
 
 
