@@ -1,9 +1,9 @@
 // ax²+bx+c=0
 // z=b²-4ac
 
-let a=4;
-let b=35;
-let c=20;
+let a=0;
+let b=0;
+let c=0;
 
 let value=[a,b,c];
 
@@ -12,9 +12,6 @@ function calculateZ (){
 }
 let z=calculateZ(value);
 console.log(z);
-
-
-
 
 function calculateY (){
   return (-b/(2*a))
@@ -39,7 +36,7 @@ console.log(x1);
 if(z>0){
   alert("This equation has two results "+x1+" and "+x2);
 }else if(z=0){
-    alert("This equation has one results"+x1+"and"+x2);
+    alert("This equation has one results"+y);
 }
 else alert("This equation doesn't have results");
 
